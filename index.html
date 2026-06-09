@@ -290,9 +290,6 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    display: block;
   }
   .project-card::before {
     content: '';
@@ -516,7 +513,7 @@
         <span class="stat-label">CGPA</span>
       </div>
       <div class="stat">
-        <span class="stat-num">5+</span>
+        <span class="stat-num">6+</span>
         <span class="stat-label">Projects</span>
       </div>
       <div class="stat">
@@ -541,9 +538,6 @@
       <span class="skill-pill">TensorFlow</span>
       <span class="skill-pill">OpenCV</span>
       <span class="skill-pill">HuggingFace</span>
-      <span class="skill-pill">Celery · Redis</span>
-      <span class="skill-pill">Next.js</span>
-      <span class="skill-pill">FastAPI</span>
     </div>
   </div>
 </section>
@@ -556,7 +550,7 @@
   </div>
   <div class="project-cards reveal">
 
-    <a class="project-card" href="https://github.com/Ankitapradhan04/AI-Study-Assistant" target="_blank" rel="noopener" tabindex="0">
+    <div class="project-card" tabindex="0" onclick="window.open('https://github.com/Ankitapradhan04/AI-Study-Assistant', '_blank')">
       <p class="project-number">001 — 2026</p>
       <span class="project-icon">🧠</span>
       <h3 class="project-name">AI Study Assistant</h3>
@@ -567,9 +561,9 @@
         <span class="project-tag">LLM</span>
       </div>
       <p class="project-metric">↗ Inference pipeline optimized for large inputs</p>
-    </a>
+    </div>
 
-    <a class="project-card" href="https://github.com/Ankitapradhan04/Snap-Savor" target="_blank" rel="noopener" tabindex="0">
+    <div class="project-card" tabindex="0" onclick="window.open('https://github.com/Ankitapradhan04/Snap-Savor', '_blank')">
       <p class="project-number">002 — 2025</p>
       <span class="project-icon">🍽️</span>
       <h3 class="project-name">Snap &amp; Savor</h3>
@@ -581,28 +575,26 @@
         <span class="project-tag">CI/CD</span>
       </div>
       <p class="project-metric">↗ End-to-end containerized deployment</p>
-    </a>
+    </div>
 
-    <a class="project-card" href="https://github.com/Ankitapradhan04/TaskForge" target="_blank" rel="noopener" tabindex="0">
-      <p class="project-number">003 — 2025</p>
-      <span class="project-icon">⚙️</span>
-      <h3 class="project-name">TaskForge</h3>
-      <p class="project-desc">Production-ready job queue and task worker system with async processing for email, image resizing, and report generation. Deployed with Docker Compose.</p>
+    <div class="project-card" tabindex="0" onclick="window.open('https://github.com/Ankitapradhan04/Fruit-Yield-Estimator', '_blank')">
+      <p class="project-number">003 — 2024</p>
+      <span class="project-icon">🌿</span>
+      <h3 class="project-name">Fruit Yield Estimation</h3>
+      <p class="project-desc">Computer vision pipeline for agricultural yield prediction using segmentation and feature extraction, served via Flask APIs. Nearly 90% prediction accuracy achieved.</p>
       <div class="project-tags">
-        <span class="project-tag">Python</span>
-        <span class="project-tag">Celery</span>
-        <span class="project-tag">Redis</span>
-        <span class="project-tag">FastAPI</span>
-        <span class="project-tag">Docker</span>
+        <span class="project-tag">OpenCV</span>
+        <span class="project-tag">TensorFlow</span>
+        <span class="project-tag">Flask</span>
       </div>
-      <p class="project-metric">↗ Async multi-worker task processing</p>
-    </a>
+      <p class="project-metric">↗ ~90% prediction accuracy</p>
+    </div>
 
-    <a class="project-card" href="https://github.com/Ankitapradhan04/Vedanta-Summariser" target="_blank" rel="noopener" tabindex="0">
+    <div class="project-card" tabindex="0" onclick="window.open('https://github.com/Ankitapradhan04/Vedanta-Summariser', '_blank')">
       <p class="project-number">004 — 2024</p>
       <span class="project-icon">📜</span>
       <h3 class="project-name">Vedanta Summarizer</h3>
-      <p class="project-desc">Transformer-based NLP summarization system with HuggingFace models, covering preprocessing, tokenization, and inference optimization. Containerized with a scalable backend for deployment.</p>
+      <p class="project-desc">Transformer-based NLP summarization system with HuggingFace models, covering preprocessing, tokenization, and inference optimization. Containerized with a scalable backend for production deployment.</p>
       <div class="project-tags">
         <span class="project-tag">Python</span>
         <span class="project-tag">NLP</span>
@@ -611,21 +603,36 @@
         <span class="project-tag">Docker</span>
       </div>
       <p class="project-metric">↗ ~30% accuracy improvement</p>
-    </a>
+    </div>
 
-    <a class="project-card" href="https://github.com/Ankitapradhan04/Study-Planner" target="_blank" rel="noopener" tabindex="0">
-      <p class="project-number">005 — 2024</p>
+    <div class="project-card" tabindex="0" onclick="window.open('https://github.com/Ankitapradhan04/TaskForge', '_blank')">
+      <p class="project-number">005 — 2025</p>
+      <span class="project-icon">⚙️</span>
+      <h3 class="project-name">TaskForge</h3>
+      <p class="project-desc">Production-ready job queue and task worker system with email sending, image resizing, and report generation. Deployed with Docker Compose featuring async task processing via Celery and Redis.</p>
+      <div class="project-tags">
+        <span class="project-tag">Python</span>
+        <span class="project-tag">Celery</span>
+        <span class="project-tag">Redis</span>
+        <span class="project-tag">FastAPI</span>
+        <span class="project-tag">Docker</span>
+      </div>
+      <p class="project-metric">↗ Async distributed task processing</p>
+    </div>
+
+    <div class="project-card" tabindex="0" onclick="window.open('https://github.com/Ankitapradhan04/Study-Planner', '_blank')">
+      <p class="project-number">006 — 2025</p>
       <span class="project-icon">📅</span>
       <h3 class="project-name">Study Planner</h3>
-      <p class="project-desc">Full-stack self-study planner with a custom dark design system, daily timetable scheduling, and persistent task tracking. Built with Next.js, Prisma, and PostgreSQL.</p>
+      <p class="project-desc">Full-stack self-study planner with a structured daily timetable, custom dark design system, and PostgreSQL-backed persistence. Built with Next.js 14 and Prisma, deployed on Vercel.</p>
       <div class="project-tags">
         <span class="project-tag">Next.js</span>
         <span class="project-tag">Prisma</span>
         <span class="project-tag">PostgreSQL</span>
         <span class="project-tag">Vercel</span>
       </div>
-      <p class="project-metric">↗ Structured 6-hour daily study schedule</p>
-    </a>
+      <p class="project-metric">↗ Structured 6-hour daily study system</p>
+    </div>
 
   </div>
 </section>
@@ -641,7 +648,7 @@
       <span class="contact-link-icon">✉</span>
       <span>ankitapradhan1915@gmail.com</span>
     </a>
-    <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+    <a href="https://github.com/Ankitapradhan04" target="_blank" rel="noopener" class="contact-link">
       <span class="contact-link-icon">⌥</span>
       <span>GitHub</span>
     </a>
